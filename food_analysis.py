@@ -4,19 +4,16 @@ import seaborn as sns
 import numpy as np
 from sklearn.linear_model import LinearRegression
 
-# Load the dataset
 data = pd.read_csv('food_prices.csv')
 
-# 1. Calculate inflation rate for each item
 data['Inflation_Rate'] = ((data['Current_Price'] - data['Past_Price']) / data['Past_Price']) * 100
 
-# 2. Descriptive Statistics
 print("Descriptive Statistics of Food Prices:\n", data.describe())
 
-# 3. Missing Value Check
+#  Missing Value Check
 print("\nMissing Values in the Data:\n", data.isnull().sum())
 
-# 4. Correlation Heatmap (Selecting numerical columns for correlation)
+#  Correlation Heatmap (Selecting numerical columns for correlation)
 plt.figure(figsize=(10, 8))
 sns.heatmap(data[['Current_Price', 'Past_Price', 'Inflation_Rate']].corr(), annot=True, cmap='coolwarm')
 plt.title('Correlation Matrix of Food Prices')
@@ -47,7 +44,7 @@ plt.ylabel('Price (Naira)')
 plt.tight_layout()
 plt.show()
 
-# 8. Predictive Modeling for Price Forecasting
+#  Predictive Modeling for Price Forecasting
 # Preparing the data for Linear Regression Model
 year_data = data.groupby('Year')['Current_Price'].mean().reset_index()
 X = year_data['Year'].values.reshape(-1, 1)
