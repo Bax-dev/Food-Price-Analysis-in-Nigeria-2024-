@@ -1,0 +1,15 @@
+Item,Current_Price,Past_Price,Month,Year,Region,Quantity
+Rice,8000,7500,Jan,2024,Lagos,50kg
+Garri,4000,3800,Jan,2024,Abuja,50kg
+Indomie,1200,1100,Jan,2024,Lagos,12 packs
+Beans,9000,8500,Jan,2024,Kano,50kg
+Yam,2000,1900,Jan,2024,Ibadan,10 tubers
+Plantain,1500,1400,Jan,2024,Port Harcourt,20 pieces
+Spaghetti,1300,1200,Jan,2024,Lagos,12 packs
+Rice,8200,7800,Feb,2023,Lagos,50kg
+Garri,4100,3900,Feb,2023,Abuja,50kg
+Indomie,1250,1150,Feb,2023,Lagos,12 packs
+Beans,9200,8800,Feb,2023,Kano,50kg
+Yam,2050,1950,Feb,2023,Ibadan,10 tubers
+Plantain,1600,1450,Feb,2023,Port Harcourt,20 pieces
+Spaghetti,1350,1250,Feb,2023,Lagos,12 packs
