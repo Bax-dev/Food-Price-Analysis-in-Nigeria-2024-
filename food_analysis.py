@@ -74,4 +74,3 @@ plt.tight_layout()
 plt.savefig('inflation_rate_report.png')  # Save the chart as PNG
 plt.show()
 
-# Save a summary of the analysis as a PDF (optional)
